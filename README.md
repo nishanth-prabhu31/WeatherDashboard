@@ -43,6 +43,7 @@ Then visit http://localhost:5500 in your browser.
 
 - Caching: the app caches recent city results in localStorage for ~10 minutes to reduce API calls and reduce lag.
 - Debounce: the search input is debounced to avoid too many requests while typing.
-- Next steps: add forecast, local geolocation, and (optionally) a serverless proxy to hide the API key for production.
+- Next steps: add forecast, local geolocation, and (optionally) a serverless proxy to hide the API key for production..
+
 
 
