@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Weather Dashboard</h1>
+      <p class="subtitle">Live weather for any city — fast, simple, and pretty.</p>
+    </header>
+
+    <section class="search">
+      <input id="city-input" type="search" placeholder="Enter city name (e.g. London)" aria-label="City" />
+      <button id="search-btn" aria-label="Search">Search</button>
+    </section>
+
+    <div id="loader" class="loader hidden">Loading…</div>
+
+    <section id="card" class="card hidden" aria-live="polite">
+      <div class="card-top">
+        <div class="location" id="location"></div>
+        <div class="temp" id="temp"></div>
+      </div>
+      <div class="card-mid">
+        <img id="icon" src="" alt="weather icon" />
+        <div class="desc" id="desc"></div>
+      </div>
+      <div class="card-bottom">
+        <div class="extra"><strong>Feels</strong><span id="feels"></span></div>
+        <div class="extra"><strong>Humidity</strong><span id="humidity"></span></div>
+        <div class="extra"><strong>Wind</strong><span id="wind"></span></div>
+      </div>
+    </section>
+
+    <div id="msg" class="msg hidden"></div>
+
+    <footer class="footer">
+      <small>Powered by OpenWeather </small>
+    </footer>
+  </main>
+<script src="config.js"></script>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
