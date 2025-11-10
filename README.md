@@ -45,4 +45,4 @@ Then visit http://localhost:5500 in your browser.
 - Debounce: the search input is debounced to avoid too many requests while typing.
 - Next steps: add forecast, local geolocation, and (optionally) a serverless proxy to hide the API key for production.
 
-If you want, I can also add a Netlify Function later to proxy requests so your API key is not exposed in client-side JS — tell me when you're ready.
+
